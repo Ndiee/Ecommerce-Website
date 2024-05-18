@@ -1,138 +1,188 @@
-Skip to content
-Navigation Menu
-Ndiee
-/
-Ecommerce-Website
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+	
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A0A0A0;
+        }
+		header {
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			background: #000000;
+			color: #ffffff;
+			padding: 20px;
+			font-size: 12px;
+		}
 
-Type / to search
+		nav {
+			display: inline-block;
+			margin-top: 10px;	
+				
+		}
 
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Files
-Go to file
-t
-About us sh.html
-README.md
-Shoe Haven logo.png
-about_us_icon-removebg-preview.png
-contact.html
-home logo.png
-image_2024-05-15_182202408-removebg-preview.png
-image_2024-05-15_182710244-removebg-preview.png
-image_2024-05-15_182829793-removebg-preview.png
-index.html
-my ecommerce website.html
-snapedit_1715607335126.jpeg
-snapedit_1715620364906.jpeg
-Editing my ecommerce website.html in Ecommerce-Website
-BreadcrumbsEcommerce-Website
-/
-my ecommerce website.html
-in
-main
+		nav a {
+			text-decoration: none;
+			color: #f5f5f5;
+			padding: 8px 12px;
+			margin: 0 10px;
+			border: 1px solid #f5f5f5;
+		}
 
-Edit
+		nav a img {
+			width: 10px;
+			height: 10px;
+			margin-right: 5px;
+			margin-up: 10px;
+		}
 
-Preview
-Indent mode
+		nav a:hover {
+			background-color: #777;
+		}
 
-Tabs
-Indent size
+		.logo img{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+		}
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .shoe {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .shoe img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .shoe h2 {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .shoe p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .shoe button {
+            background-color:#202020;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .shoe button:hover {
+            background-color: #585858;
+        }
+		a {
+			color: White; /* Default color for links */
+		}
 
-8
-Line wrap mode
-
-No wrap
-Editing my ecommerce website.html file contents
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246
-247
-248
-249
-250
-251
-252
-253
-254
-255
-256
-257
-258
-259
-260
-261
-262
-263
-264
-265
-266
-267
+		a:visited {
+			color: White;
+		}
+		
+    </style>
+</head>
+<body>
+    <header>				
+		<div class= "logo">
+			<h2><img src = "Shoe Haven logo.png" alt = "shoe haven logo"></h2>
+		</div>
+		<nav>
+			<a href = "index.html"> 
+				<img src = "image_2024-05-15_182710244-removebg-preview.png" alt= "Home">
+				Home
+			</a>
+			<a href = "my ecommerce website.html"> 
+				<img src = "image_2024-05-15_182202408-removebg-preview.png" alt= "Products">
+				Products
+			</a>
+			<a href = "contact.html"> 
+				<img src ="image_2024-05-15_182829793-removebg-preview.png" alt= "contact us">
+				Contact us
+			</a>
+			<a href = "About us sh.html"> 
+				<img src = "about_us_icon-removebg-preview.png" alt= "about us">
+				About us
+			</a>
+		</nav>
+    </header>
+	<main>
+		<div class="container">
+			<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/image_aa33effe-02af-4b19-b019-b41cc18b5342_590x.webp?v=1676370622"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/products/image_aa33effe-02af-4b19-b019-b41cc18b5342_590x.webp?v=1676370622" alt="Shoe 2">
+            <h2>Nike SB Dunk Low Pro "White Gum"</h2>
+            <p>$60</p>
+            <button onclick="addToCart('Nike SB Dunk Low Pro White Gum', 60)">Add to Cart</button>
+        </div>
+				<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/CDGGGGGGGGGGGG_196647a7-aa65-4286-a779-af5ffbafb159_590x.jpg?v=1630840669"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/products/CDGGGGGGGGGGGG_196647a7-aa65-4286-a779-af5ffbafb159_590x.jpg?v=1630840669" alt="Shoe 2">
+            <h2>CDG x Converse Chuck Taylor All-Star 70s Ox Comme des Garcons <br> PLAY Black (UNISEX)</h2>
+            <p>$60</p>
+            <button onclick="addToCart('CDG x Converse Chuck Taylor All-Star 70s Ox Comme des Garcons PLAY Black (UNISEX)', 60)">Add to Cart</button>
+        </div>
+			<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/ScreenShot2020-05-14at9.23.54PM_590x.png?v=1589462663"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/products/ScreenShot2020-05-14at9.23.54PM_590x.png?v=1589462663" alt="Shoe 2">
+            <h2>Air Force 1 <br>"Triple <br> White"</h2>
+            <p>$60</p>
+            <button onclick="addToCart('Air Force 1 Triple White', 60)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/DSGSG_590x.png?v=1671864579"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/products/DSGSG_590x.png?v=1671864579" alt="Shoe 2">
+            <h2>adidas Samba OG <br>"Cloud White <br> Core Black"</h2>
+            <p>$40</p>
+            <button onclick="addToCart('adidas Samba OG Cloud White Core Black', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/Nike-Dunk-Low-Retro-White-Black-2021_1_590x.jpg?v=1610619167"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/products/Nike-Dunk-Low-Retro-White-Black-2021_1_590x.jpg?v=1610619167" alt="Shoe 2">
+            <h2>Nike Dunk Low <br>"White Black"</h2>
+            <p>$40</p>
+            <button onclick="addToCart('Nike Dunk Low White Black', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/image_dfee0653-79ae-4e90-95c9-a5e0094381aa_590x.jpg?v=1652860563"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/products/image_dfee0653-79ae-4e90-95c9-a5e0094381aa_590x.jpg?v=1652860563" alt="Shoe 2">
+            <h2>New Balance 530 <br>"White <br> Silver Navy"</h2>
+            <p>$40</p>
+            <button onclick="addToCart('New Balance 530 White Silver NavyNew Balance 530 White Silver Navy', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/products/DSADASEA_590x.jpg?v=1626427266"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/products/DSADASEA_590x.jpg?v=1626427266" alt="Shoe 2">
+            <h2>Jordan 1 Low <br> "Wolf Grey" </h2>
+            <p>$40</p>
+            <button onclick="addToCart('Jordan 1 Low Wolf Grey ', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
+		<img class="https://shop.shoegamemanila.com/cdn/shop/files/FullSizeRender_2a4e7fd5-68f4-4737-b6be-20c61c3d6778_590x.jpg?v=1703769377"> <!-- Link to the shoe's details page -->
+            <img src="https://shop.shoegamemanila.com/cdn/shop/files/FullSizeRender_2a4e7fd5-68f4-4737-b6be-20c61c3d6778_590x.jpg?v=1703769377" alt="Shoe 2">
+            <h2>Onitsuka Tiger <br> "Tokuten <br> White Black"</h2>
+            <p>$40</p>
+            <button onclick="addToCart('Onitsuka Tiger Tokuten White Black', 40)">Add to Cart</button>
+        </div>
+		<div class="shoe">
 		<img class="https://shop.shoegamemanila.com/cdn/shop/products/TTTTTT_590x.png?v=1648114760"> <!-- Link to the shoe's details page -->
             <img src="https://shop.shoegamemanila.com/cdn/shop/products/TTTTTT_590x.png?v=1648114760" alt="Shoe 2">
             <h2>Adidas Yeezy Boost 350 <br> "V2 Bone"</h2>
@@ -216,5 +266,27 @@ Editing my ecommerce website.html file contents
 		const customerAddress = document.getElementById('customerAddress').value;
 		const customerContact = document.getElementById('customerContact').value;
 
-Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
-Editing Ecommerce-Website/my ecommerce website.html at main · Ndiee/Ecommerce-Website
+		if (!customerName || !customerAddress || !customerContact) {
+			alert("Please enter your name, address and contact number.");
+			return;
+		}
+
+		let orderSummary = '';
+
+		cart.forEach(item => {
+			orderSummary += `${item.name}: $${item.price}\n`;
+		});
+
+		orderSummary += `\nTotal Price: $${cart.reduce((total, item) => total + item.price, 0)}`;
+		orderSummary += `\nName: ${customerName}`;
+		orderSummary += `\nAddress: ${customerAddress}`;
+		orderSummary += `\nContact Number: ${customerContact}`;
+
+		alert(orderSummary);
+		cart = [];
+		closeModal();
+		
+	}
+</script>
+</body>
+</html>
