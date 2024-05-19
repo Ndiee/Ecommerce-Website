@@ -223,16 +223,18 @@
 		updateCartPreview();
 	}
 	function orderAgain() {
-            // This function simply closes the modal, allowing the user to order again
-            document.getElementById('overlay').style.display = "none";
-					 cart = [];
-			alert('Do you want to order again?')
+             document.getElementById('overlay').style.display = "none";
+					 
+			alert('You can continue shopping and add more items to your cart.')
+			// No need to call addToCart or clear the cart here.
         }
+			
 
         function clearCart() {
             // This function clears the cart and updates the cart preview
             cart = [];
             updateCartPreview();
+			checkout();
         }
 
 	function updateCartPreview() {
@@ -260,7 +262,7 @@
 		 cart = [];
           
 	}
-
+	
 	function checkout() {
 		const customerName = document.getElementById('customerName').value;
 		const customerAddress = document.getElementById('customerAddress').value;
@@ -283,8 +285,9 @@
 		orderSummary += `\nContact Number: ${customerContact}`;
 
 		alert(orderSummary);
+		alert("Thank you for your order!");
 		cart = [];
-		closeModal();
+		
 		
 	}
 </script>
