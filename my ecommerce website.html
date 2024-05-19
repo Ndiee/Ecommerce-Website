@@ -202,16 +202,15 @@
 			<p>Address:</p>
 			<input type="text" id="customerAddress" style="margin-bottom: 10px;">
 			<p>Contact Number:</p>
-			<input type="text" id="customerContact" style="margin-bottom: 10px;"><br>
+			<input type="text" id="customerContact" style="margin-bottom: 10px;"><br><br>	
 			<button id="orderAgain"onclick="orderAgain()">Order Again</button>
 			<button id="checkoutButton" onclick="checkout()">Checkout</button><br><br>
             <button id="clearCart"onclick="clearCart()">Clear Cart</button>
 			<button id="closeButton" onclick="closeModal()" style="background-color: Black; color: white; margin-right: 15px;">Close</button>
+			
 		</div>
 	</div>
-	<div id="cartButtons">
           
-        </div>
     </main>
 
 
@@ -223,8 +222,7 @@
 		updateCartPreview();
 	}
 	function orderAgain() {
-             document.getElementById('overlay').style.display = "none";
-					 
+             document.getElementById('overlay').style.display = "none"; 
 			alert('You can continue shopping and add more items to your cart.')
 			// No need to call addToCart or clear the cart here.
         }
@@ -232,9 +230,11 @@
 
         function clearCart() {
             // This function clears the cart and updates the cart preview
+			showModal();
+			updateCartPreview();
             cart = [];
-            updateCartPreview();
-			checkout();
+            
+			
         }
 
 	function updateCartPreview() {
